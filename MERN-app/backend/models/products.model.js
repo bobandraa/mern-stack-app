@@ -14,8 +14,9 @@ const productSchema = new mongoose.Schema({
         required: true
     },
 }, {
-    timestamp: true // createdAt, updatedAt
-});
+    timestamps: true, // createdAt, updatedAt
+    }
+);
 
 const Product = mongoose.model('Product', productSchema); //mongoose converts first argument to lowerscase & plural
 
